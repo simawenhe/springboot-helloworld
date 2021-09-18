@@ -1,0 +1,10 @@
+stages:
+- name: "22"
+  steps:
+  - applyAppConfig:
+      catalogTemplate: cattle-global-data:library-wordpress
+      version: 9.0.3
+      name: "22"
+      targetNamespace: nb
+timeout: 60
+notification: {}
